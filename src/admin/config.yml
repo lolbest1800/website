@@ -15,7 +15,7 @@ collections:
       - {label: "Description", name: "description", widget: "markdown"}
       - {label: "Tags", name: "tags", widget: "list" , default: ["product"] }
       - {label: "pdf link", name: "pdflink", widget: "string", default: "#"}
-      - {label: "Category" , name: "category" , widget: "select" , options: ["panneau solaire", "batterie solaire", "regulateur solaire", "onduleur solaire", "chauffe eau solaire", "pompage solaire", "les accessoires solaire", "projecteur", "luminous 220v", "éclairage public", "réflecteurs", "candelabres", "crosse"]}
+      - {label: "Category" , name: "category" , widget: "select" , options: ["panneau-solaire", "batterie-solaire", "regulateur-solaire", "onduleur-solaire", "chauffe-eau-solaire", "pompage-solaire", "les-accessoires-solaire", "projecteur", "luminous-220v", "éclairage-public", "réflecteurs", "candelabres", "crosse"]}
 
 
 
