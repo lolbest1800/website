@@ -15,7 +15,7 @@ collections:
       - {label: "Description", name: "description", widget: "markdown"}
       - {label: "Tags", name: "tags", widget: "list" , default: ["product"] }
       - {label: "pdf link", name: "pdflink", widget: "string", default: "#"}
-      - label: "Align Content" , name: "align" , widget: "select" , options: ["left", "center", "right"]
+      - {label: "Align Content" , name: "align" , widget: "select" , options: ["left", "center", "right"]}
 
 
 
