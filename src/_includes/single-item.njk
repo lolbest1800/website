@@ -2,7 +2,6 @@
 layout: "base.njk"
 ---
 
-
   <div class="shop-item-main-container">
         <div class="single-shop-item-image-container">
             <!--
@@ -27,16 +26,17 @@ layout: "base.njk"
         </div>
 
 
-
-
     </div>
 
-    <div class="single-shop-item-data-sheat-container">
-        <p class="single-shop-item-data-sheat-title">
-            Fiche Technique:
-        </p>
-        <p class="single-shop-item-data-sheat-text">
-            <i class="material-icons single-shop-pdf-icon">&#xe415;</i>
-            <a class="pdf-download-text" href="{{ pdflink }}" target="_blank">Telecharger</a>
-        </p>
-    </div>
+    {% if pdflink != "#" %}
+        <div class="single-shop-item-data-sheat-container">
+            <p class="single-shop-item-data-sheat-title">
+                Fiche Technique:
+            </p>
+            <p class="single-shop-item-data-sheat-text">
+                <i class="material-icons single-shop-pdf-icon">&#xe415;</i>
+                <a class="pdf-download-text" href="{{ pdflink }}" target="_blank">Telecharger</a>
+            </p>
+        </div>
+    {% endif %}
+
