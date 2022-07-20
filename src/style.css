@@ -1,0 +1,757 @@
+*
+{
+    box-sizing: border-box;
+    font-family: Poppins;
+    padding: 0px;
+    margin: 0px;
+    scroll-behavior: smooth;
+}
+
+
+.store-info-container
+{
+    text-align: center;
+    background-color: #eeba0b;
+    font-weight: bold;
+}
+
+.material-icons
+{
+    vertical-align: middle;
+}
+
+.navbar
+{
+    background-color: #000000;
+}
+
+.navbar-grid
+{
+    display: grid;
+    grid-template-columns: repeat(8,1fr);
+    column-gap: 20px;
+    place-items: center;
+    list-style: none;
+
+}
+.navbar-logo
+{
+    height: 90px;
+}
+
+@media (max-width: 850px)
+{
+    .navbar-logo
+    {
+        height: 65px;
+    }
+}
+
+
+
+.navbar-link
+{
+    text-decoration: none;
+    color: white;
+    font-size: 24px;
+    
+}
+
+.navbar-link:hover
+{
+    color: rgb(128, 128, 128);
+}
+
+.navbar-item1 {grid-column-start: 3;}
+.navbar-item2 {grid-column-start: 6;}
+
+
+.navbar-contact-button
+{
+    color: black;
+    font-size: 24px;
+    font-weight: bold;
+    background-color: #eeba0b;
+    padding: 8px 24px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin: 10px;
+    grid-column-start: 8;
+
+}
+.navbar-contact-button-link
+{
+    color: black;
+    text-decoration: none;
+}
+.navbar-contact-button:hover
+{
+    background-color: #ffc400;
+}
+
+
+
+@media  (max-width: 850px) 
+{
+    /*
+    body 
+    {
+      background-color: lightblue;
+    }
+    */
+    .navbar-grid
+    {   
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-areas: 
+            'logo logo contact-btn contact-btn'
+            'home home shop shop';
+        gap: 5px;
+        place-items: center;
+        list-style: none;
+        padding: 5px;
+
+    }
+    .navbar-logo  {grid-area: logo;}
+    .navbar-contact-button {grid-area: contact-btn;}
+    .navbar-item1 {grid-area: home;}
+    .navbar-item2 {grid-area: shop;}
+}
+
+
+
+
+/* hero section
+#
+#
+#
+#
+#
+#
+#
+#
+#
+*/
+.hero-section
+{
+    background-image: url("static/solar-farm-hero.jpg");
+    background-attachment: fixed;
+    height: 90vh;
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.hero-grid
+{
+    display: grid;
+    place-items: center;
+}
+
+
+.hero-text
+{
+    text-align: center;
+    padding-top: 25vh;
+    font-size: 36px;
+    font-weight: bold;
+
+
+}
+
+.hero-button
+{
+    color: black;
+    font-size: 24px;
+    font-weight: bold;
+    background-color: #eeba0b;
+    padding: 8px 24px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 5vh;
+
+
+    animation-duration: 1000ms;
+}
+
+.hero-button-link
+{
+    color: black;
+    text-decoration: none;
+}
+
+.hero-button:hover
+{
+    background-color: #ffc400;
+}
+
+.services-container
+{
+
+
+}
+
+
+.services-text
+{
+
+    font-size: 36px;
+    height: 15vh;
+    text-decoration: underline;
+    text-decoration-color: #eeba0b;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+
+}
+
+.services-boxes-container
+{
+    display: flex;
+        flex-direction: row;
+    padding: 20px;
+    gap: 12px;
+}
+@media (max-width: 850px)
+{
+    .services-boxes-container
+    {
+
+        flex-direction: column;
+
+    }
+}
+.services-box
+{
+    flex: 1;
+    display: flex;
+        flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    box-shadow: 1px 2px 10px rgba(128, 128, 128,0.8);
+    border-radius: 10px;
+    margin-left:  3%;
+    margin-right: 3%;
+}
+
+.service-title
+{
+    text-align: center;
+    font-size: 22px;
+    margin-bottom: 6px;
+}
+.service-text
+{
+    text-align: center;
+    font-size: 16px;
+    color: #000000a0;
+}
+
+
+
+
+
+/*
+
+
+
+################################################################
+#                                                              #
+#                                                              #
+#                                                              #
+#                                                              #
+#                      shop sidebar and products page css      #
+#                                                              #
+#                                                              #
+#                                                              #
+#                                                              #
+################################################################
+
+*/
+
+
+
+.shop-page-container
+{
+    display: flex;
+}
+
+.sidebar-container
+{
+    width: 5rem;
+    height: auto;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-color: #eeba0b;
+
+
+
+}
+
+.sidebar-item-container
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 12px;
+    padding: 5px;
+    min-height: 80px;
+    font-weight: bold;
+
+}
+.sidebar-item-container:hover
+{
+    background-color: rgb(128, 128, 128,0.2);
+    cursor: pointer;
+}
+
+.shop-product-page-container
+{
+    flex: 1;
+    display: grid;
+        grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
+        align-content: space-between;
+    row-gap: 30px;
+    column-gap: 10px;
+    padding: 20px 10px;
+}
+
+.shop-item-link
+{
+    text-decoration: none;
+    color: black;
+}
+
+.shop-item-container
+{
+    box-shadow: 1px 2px 5px rgb(128, 128, 128,1);
+    border-top-left-radius: 5%;
+    border-top-right-radius: 5%;
+}
+
+.shop-item-image-container
+{
+    border-top-left-radius: 5%;
+    border-top-right-radius: 5%;
+    position: relative;
+    overflow: hidden;
+}
+.shop-item-image
+{
+    width: 100%;
+    height: 400px;
+    object-fit:cover;
+    object-position: center;
+
+    transition: transform 1s,
+    border-top-left-radius 1s,
+    border-top-right-radius 1s
+    ;
+
+}
+.shop-item-image:hover
+{
+    transform: scale(1.2);
+    cursor: pointer;
+}
+/*
+.shop-item-price
+{
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+
+    background-color: black;
+    color: #eeba0b;
+    padding: 8px;
+    border-radius: 2px;
+}
+*/
+.shop-item-info-container
+{
+    padding: 10px;
+}
+
+.shop-item-title
+{
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.shop-item-desc
+{
+    font-size: 16px;
+}
+
+
+
+/*
+
+################################################################
+#                                                              #
+#                                                              #
+#                                                              #
+#                                                              #
+#                      css for single item page                #
+#                                                              #
+#                                                              #
+#                                                              #
+#                                                              #
+################################################################
+
+*/
+.shop-item-main-container
+{
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+    margin: 30px;
+    box-shadow: 1px 2px 10px rgb(128, 128, 128,0.5);
+
+
+}
+
+@media (max-width: 850px)
+{
+    .shop-item-main-container
+    {
+        flex-direction: column;
+    }
+}
+.single-shop-item-image-container
+{
+    flex: 2;
+
+
+}
+
+.single-shop-item-image
+{
+    width: 100%;
+    height: auto;
+    max-height: 80vh;
+    object-fit:contain;
+    object-position: center;
+}
+
+
+.single-shop-item-info-container
+{
+    flex: 3;
+    padding: 5px 20px;
+    display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+    
+}
+
+
+
+.single-shop-item-title
+{
+    font-size: 28px;
+    font-weight: bold;
+}
+
+@media (max-width: 850px)
+{
+    .single-shop-item-info-container
+    {
+        padding: 30px 0px;
+    }
+}
+
+
+.single-shop-item-desc
+{
+    padding-left: 15px;
+}
+
+@media (max-width: 850px)
+{
+    .single-shop-item-desc
+    {
+        margin-bottom: 50px;
+    }
+}
+/*
+.single-shop-item-price
+{
+    background-color: #000000;
+    color: #eeba0b;
+    font-weight: bold;
+    text-align: center;
+    padding: 20px 80px;
+    border-radius: 4px;
+
+    align-self: center;
+    justify-self:flex-end;
+    margin-top: 20px;
+    margin-top: auto;
+    
+
+
+}
+*/
+
+.single-shop-item-data-sheat-container
+{
+    margin: 30px;
+    box-shadow: 1px 2px 10px rgb(128, 128, 128,0.5);
+    padding: 20px;
+}
+
+
+.single-shop-item-data-sheat-title
+{
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.single-shop-item-data-sheat-text
+{
+    margin-left: 10px;
+    color: black;
+    text-decoration: none;
+}
+
+.pdf-download-text
+{
+    color: #000000;
+    font-size: 18px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.pdf-download-text:hover
+{
+    text-decoration: underline;
+}
+
+.single-shop-pdf-icon
+{
+    font-size: 60px !important; 
+    padding: 10px; color: 
+    rgb(250, 28, 28);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.footer-container
+{
+    background-color:#000000;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    min-height: 300px;
+    display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 5px;
+    padding: 20px;
+}
+
+@media (max-width : 850px)
+{
+    .footer-container
+    {
+        grid-template-columns: 1fr;
+    }
+}
+
+.footer-info-container
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+
+}
+.footer-info-phoe-number
+{
+    color: white;
+    margin: 20px;
+    text-align: center;
+}
+
+.footer-link
+{
+    color: white;
+    text-decoration: none;
+    font-size: 24px;
+    margin: 10px;
+}
+.footer-link:hover
+{
+    text-decoration:underline;
+}
+
+
+
+.footer-google-map-container
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-left: 5px solid #eeba0b;
+    
+    padding: 10px;
+    
+}
+
+@media (max-width : 850px)
+{
+    .footer-google-map-container
+    {
+        border-left: none;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        border-top: 5px solid #eeba0b;
+        padding: 10px;
+        
+    }
+}
+
+.footer-google-map
+{
+    width: 100%;
+    max-width: 600px;
+    height: 240px;
+}
+
+
+

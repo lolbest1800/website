@@ -1,0 +1,42 @@
+---
+layout: "base.njk"
+---
+
+
+  <div class="shop-item-main-container">
+        <div class="single-shop-item-image-container">
+            <!--
+            <img  class="single-shop-item-image" src="https://images.unsplash.com/photo-1558449028-b53a39d100fc?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8c29sYXJ8ZW58MHx8MHx8&w=1000&q=80" alt="">
+            -->
+            <img  class="single-shop-item-image" src="{{ image }}" alt="">
+        </div>
+
+
+        <div class="single-shop-item-info-container">
+            <p class="single-shop-item-title">
+                {{ title  }}
+            </p>
+            <p class="single-shop-item-desc">
+                {{ description  }}
+            </p>
+            <!--
+            <div class="single-shop-item-price">
+                15000 DZD
+            </div>
+            -->
+        </div>
+
+
+
+
+    </div>
+
+    <div class="single-shop-item-data-sheat-container">
+        <p class="single-shop-item-data-sheat-title">
+            Fiche Technique:
+        </p>
+        <p class="single-shop-item-data-sheat-text">
+            <i class="material-icons single-shop-pdf-icon">&#xe415;</i>
+            <a class="pdf-download-text" href="{{ pdflink }}" target="_blank">Telecharger</a>
+        </p>
+    </div>
