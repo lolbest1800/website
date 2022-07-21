@@ -1,6 +1,6 @@
 ---
 title: candelabres
-image: /uploaded-images/energia-solare-510x320.jpeg
+image: /uploaded-images/1.png
 category: candelabres
 description: candelabres
 pdflink: "#"
