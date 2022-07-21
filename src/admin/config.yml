@@ -12,10 +12,9 @@ collections:
     fields: # The fields for each document, usually in front matter
       - {label: "Title", name: "title", widget: "string"}
       - {label: "Image", name: "image", widget: "image"}
-      - {label: "Description", name: "description", widget: "markdown"}
-      - {label: "Tags", name: "tags", widget: "list" , default: ["product"] }
-      - {label: "pdf link", name: "pdflink", widget: "string", default: "#"}
       - {label: "Category" , name: "category" , widget: "select" , options: ["panneau-solaire", "batterie-solaire", "regulateur-solaire", "onduleur-solaire", "chauffe-eau-solaire", "pompage-solaire", "les-accessoires-solaire", "projecteur", "luminous-220v", "éclairage-public", "réflecteurs", "candelabres", "crosse"]}
+      - {label: "Description", name: "description", widget: "markdown"}
+      - {label: "pdf link", name: "pdflink", widget: "string", default: "#"}
 
 
 
