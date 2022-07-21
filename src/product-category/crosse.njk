@@ -10,7 +10,7 @@ layout: "base.njk"
         <div class="shop-product-page-container">
 
             {%- for product in collections.product | reverse -%}
-                {% if product.data.category == "panneau-solaire" %}
+                {% if product.data.category == "crosse" %}
                     <div class="shop-item-container">
                         <a  class="shop-item-link" href="{{ product.url }}">
                             <div class="shop-item-image-container">
