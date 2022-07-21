@@ -1,6 +1,6 @@
 ---
 title: les-accessoires-solaire
-image: /uploaded-images/energia-solare-510x320.jpeg
+image: /uploaded-images/2.png
 category: les-accessoires-solaire
 description: les-accessoires-solaire
 pdflink: "#"
