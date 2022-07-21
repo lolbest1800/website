@@ -1,6 +1,6 @@
 ---
 title: crosse
-image: /uploaded-images/energia-solare-510x320.jpeg
+image: /uploaded-images/2.png
 category: crosse
 description: |-
   <!--StartFragment-->
