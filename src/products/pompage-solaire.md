@@ -1,6 +1,6 @@
 ---
 title: pompage-solaire
-image: /uploaded-images/energia-solare-510x320.jpeg
+image: /uploaded-images/1.png
 category: pompage-solaire
 description: pompage-solaire
 pdflink: "#"
