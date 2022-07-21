@@ -1,6 +1,6 @@
 ---
 title: réflecteurs
-image: /uploaded-images/energia-solare-510x320.jpeg
+image: /uploaded-images/3.png
 category: réflecteurs
 description: réflecteurs
 pdflink: "#"
