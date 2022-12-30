@@ -363,9 +363,10 @@
     transform: scale(1.2);
     cursor: pointer;
 }
-/*
+
 .shop-item-price
 {
+    font-size: 18px;
     position: absolute;
     bottom: 20px;
     right: 20px;
@@ -373,9 +374,11 @@
     background-color: black;
     color: #eeba0b;
     padding: 8px;
+    padding-left: 12px;
+    padding-right: 12px;
     border-radius: 2px;
 }
-*/
+
 .shop-item-info-container
 {
     padding: 10px;
@@ -484,7 +487,7 @@
         margin-bottom: 50px;
     }
 }
-/*
+
 .single-shop-item-price
 {
     background-color: #000000;
@@ -502,7 +505,7 @@
 
 
 }
-*/
+
 
 .single-shop-item-data-sheat-container
 {

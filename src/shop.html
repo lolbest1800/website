@@ -13,7 +13,10 @@ layout: "base.njk"
                 <div class="shop-item-container">
                     <a  class="shop-item-link" href="{{ product.url }}">
                         <div class="shop-item-image-container">
-                            <img  class="shop-item-image" src="{{ product.data.image }}" alt="">
+                            <img class="shop-item-image" src="{{ product.data.image }}" alt="">
+                            <div class="shop-item-price">
+                                {{ product.data.price }} DZD
+                            </div>
                         </div>
                         <div class="shop-item-info-container">
                             <div class="shop-item-title">
